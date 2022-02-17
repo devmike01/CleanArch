@@ -1,0 +1,1 @@
+/Users/devmike01/AndroidStudioProjects/CleanArchAnndroid/buildSrc/build/classes/kotlin/main/Deps.class:/Users/devmike01/AndroidStudioProjects/CleanArchAnndroid/buildSrc/build/classes/kotlin/main/Versions.class
