@@ -41,7 +41,4 @@ dependencies {
         implementation(it)
     }
 
-    Deps.sharedApis.forEach {
-        api(it)
-    }
 }

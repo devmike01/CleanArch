@@ -33,4 +33,8 @@ dependencies {
     Deps.domainLibs.forEach {
         implementation(it)
     }
+
+    Deps.sharedApis.forEach {
+        api(it)
+    }
 }

@@ -21,6 +21,10 @@ android {
             proguardFiles (getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
+
+    packagingOptions {
+        resources.excludes.add("META-INF/AL2.0")
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -31,5 +35,8 @@ android {
 }
 
 dependencies {
-
+    Deps.dataLibs.forEach {
+        implementation(it)
+    }
 }
+

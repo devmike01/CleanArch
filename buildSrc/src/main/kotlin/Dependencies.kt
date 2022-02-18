@@ -26,6 +26,13 @@ object Deps {
 
 
     val domainLibs = listOf<String>(
+
+    )
+
+    val dataLibs = listOf<String>(
+        "com.google.code.gson:gson:2.9.0",
+        "com.squareup.retrofit2:retrofit:2.9.0",
+        ":domain"
     )
 
 }
