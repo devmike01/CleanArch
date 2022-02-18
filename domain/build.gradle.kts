@@ -1,6 +1,5 @@
 plugins {
-    id ("com.android.library")
-    id ("org.jetbrains.kotlin.android")
+    Plugins.set(this)
 }
 
 android {
@@ -36,5 +35,9 @@ dependencies {
 
     Deps.sharedApis.forEach {
         api(it)
+    }
+
+    Deps.sharedKapts.forEach{
+        kapt(it)
     }
 }

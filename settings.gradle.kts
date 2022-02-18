@@ -12,5 +12,8 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
+
+
 rootProject.name = "Clean Arch Anndroid"
 include (":app", ":data", ":domain")

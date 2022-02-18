@@ -1,20 +1,21 @@
 object Versions{
     const val COROUTINE_FLOW ="1.6.0"
     const val KTX_CORE ="1.7.0"
-    const val HILT ="2.38.1"
+    const val hilt ="2.39.1"
 }
 
 object Deps {
 
+    val sharedKapts = arrayListOf("com.google.dagger:hilt-compiler:${Versions.hilt}")
 
     val sharedApis = listOf<String>(
+        "com.google.dagger:hilt-android:${Versions.hilt}",
         "androidx.core:core-ktx:${Versions.KTX_CORE}",
         "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.COROUTINE_FLOW}",
         "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.COROUTINE_FLOW}"
     )
 
     val appLibs = listOf<String>(
-    "com.google.dagger:hilt-android-gradle-plugin:2.38.1",
         "androidx.appcompat:appcompat:1.4.1",
         "com.google.android.material:material:1.5.0",
         "androidx.constraintlayout:constraintlayout:2.1.3",
@@ -36,6 +37,8 @@ object Deps {
     )
 
 }
+
+
 
 
 

@@ -1,7 +1,5 @@
 plugins {
-    id ("com.android.library")
-    id ("org.jetbrains.kotlin.android")
-    kotlin("kapt")
+    Plugins.set(this)
 }
 
 android {
@@ -37,6 +35,13 @@ android {
 dependencies {
     Deps.dataLibs.forEach {
         implementation(it)
+    }
+    Deps.sharedApis.forEach {
+        implementation(it)
+    }
+
+    Deps.sharedKapts.forEach{
+        kapt(it)
     }
 }
 
